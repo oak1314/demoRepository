@@ -28,8 +28,8 @@ public class 读取文件统计字符次数 {
             for (Map.Entry<Character, Integer> entry : characterCounts.entrySet()) {
                 System.out.println("字符 '" + entry.getKey() + "' 出现次数: " + entry.getValue());
             }
-        } catch (IOException e) {
-            System.out.println("读取文件时出错: " + e.getMessage());
+        } catch (IOException ex) {
+            System.out.println("读取文件时出错: " + ex.getMessage());
         } finally {
             try {
                 if (reader != null) reader.close(); // 关闭流
